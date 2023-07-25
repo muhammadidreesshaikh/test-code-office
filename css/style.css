@@ -1,0 +1,211 @@
+/* colors */
+:root {
+    --blue-color: #48548c;
+    --white-color: #ffff;
+    --gray-color: #d1d1d1;
+    --darkgray-color: #8c8c8c;
+    --black-color: #0e0e0e;
+    --lightblue-color: #37bdc5;
+}
+
+/* body */
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* ----------------- */
+.cstm-gallery {
+    padding: 50px 0;
+}
+
+.cstm-gallery h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cstm-gallery .image {
+    margin-top: 30px;
+}
+
+.cstm-gallery .image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.session {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.session .session-text {
+    background-color: #006fb9;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.session .session-text h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.session .session-text p {
+    font-size: 14px;
+    color: white;
+    padding-top: 30px;
+}
+
+.session .session-text .session-btn {
+    margin-top: 20px;
+}
+
+/* ------------ */
+.pdf-modal {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 30px;
+}
+
+.pdf-modal .main-content h4 {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.pdf-modal .main-content p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+.pdf-modal .main-content p span {
+    font-weight: 600;
+}
+
+.pdf-modal .modal-text {
+    background-color: #ffff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.pdf-modal .modal-text i {
+    font-size: 45px;
+    color: rgb(104, 104, 104);
+}
+
+.pdf-modal .modal-text p {
+    font-size: 14px;
+    color: gray;
+    padding-top: 15px;
+}
+
+.pdf-modal .modal-text .file-btn {
+    margin-top: 30px;
+}
+
+.pdf-modal .modal-text .file-btn input {
+    display: none;
+}
+
+.pdf-modal .modal-text .file-btn a {
+    background-color: #531115;
+    color: white;
+    padding: 9px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pdf-modal .modal-text .file-btn a:hover {
+    background-color: #70171D;
+    transition: 0.5s;
+}
+
+.img-select{
+    padding: 30px 0;
+}
+/* ----------------------------- */
+
+.qualification-form{
+    background-color: white;
+    padding: 40px 0;
+}
+
+.qualification-form .info-content{
+    padding: 30px 0;
+}
+
+.qualification-form .info-content .left-content p{
+    font-size: 16px;
+    color: black;
+}
+
+.qualification-form .right-img img{
+    float: right;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.qualification-form .cstm-form .main-heading{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.qualification-form .cstm-form .main-heading h4{
+    border-top: 2px solid #bfbfbf;
+    padding: 15px 0;
+    border-bottom: 2px solid #bfbfbf;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.qualification-form .cstm-form p{
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 0 20px 0;
+}
+
+/* .cstm-form-services input{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cstm-form-services .cstm-form-btn {
+    margin-top: 20px;
+}
+
+.cstm-form-services .cstm-form-btn a {
+    background-color: #ED2024;
+    color: white;
+    padding: 9px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
