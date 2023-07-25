@@ -100,3 +100,27 @@ function onBorrowerAddress() {
         hideBorrowerAddress.classList.remove('d-none');
     }
 }
+
+// signature
+function onSignature(value) {
+    var eSignFileArea = document.getElementById("esign-file-area");
+
+    if (value.checked == true) {
+        eSignFileArea.classList.remove('d-none');
+    } else {
+        eSignFileArea.classList.add('d-none');
+    }
+}
+
+function onDigitalSignature(value) {
+    var eSignFileArea = document.getElementById("e-sign-canvas");
+    var fileSelectArea = document.getElementById("fileSelectArea");
+
+    if (value.checked == true) {
+        fileSelectArea.classList.remove('d-none');
+        eSignFileArea.classList.add('d-none');
+    } else {
+        fileSelectArea.classList.add('d-none');
+        eSignFileArea.classList.remove('d-none');
+    }
+}

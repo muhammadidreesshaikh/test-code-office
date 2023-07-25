@@ -12,7 +12,6 @@ function eSign() {
     })();
 
     var canvas = document.getElementById("sig-canvas");
-    console.log(canvas);
     var ctx = canvas.getContext("2d");
     ctx.strokeStyle = "#222222";
     ctx.lineWidth = 4;
@@ -123,15 +122,16 @@ function eSign() {
     var clearBtn = document.getElementById("sig-clearBtn");
     var submitBtn = document.getElementById("sig-submitBtn");
     clearBtn.addEventListener("click", function (e) {
+        e.preventDefault();
         clearCanvas();
         sigText.innerHTML = "Data URL for your signature will go here!";
         sigImage.setAttribute("src", "");
     }, false);
-    submitBtn.addEventListener("click", function (e) {
-        var dataUrl = canvas.toDataURL();
-        sigText.innerHTML = dataUrl;
-        sigImage.setAttribute("src", dataUrl);
-    }, false);
+    // submitBtn.addEventListener("click", function (e) {
+    //     var dataUrl = canvas.toDataURL();
+    //     sigText.innerHTML = dataUrl;
+    //     sigImage.setAttribute("src", dataUrl);
+    // }, false);
 
 }
 
