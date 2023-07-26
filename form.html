@@ -174,9 +174,9 @@
                                 <h4>LOAN OFFICER</h4>
                             </div>
 
-                            <form class="row g-3">
+                            <form class="row">
                                 <div class="col-12">
-                                    <select id="inputState" class="form-select">
+                                    <select id="inputState" class="form-select mt-3">
                                         <option selected>Please Select Your Loan Officer</option>
                                         <option>Text 1</option>
                                         <option>Text 2</option>
@@ -193,26 +193,44 @@
                             <p><strong>Notice:</strong> Alimony, Child Support Or Separate Maintenance Income Need Not
                                 Be
                                 Revealed If The Borrower Or Co-Borrower Does Not Choose To Have It Considered For
-                                Repaying
-                                This Loan.</p>
+                                Repaying This Loan.</p>
 
-                            <form class="row g-3">
+                            <form class="row">
                                 <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="Gross Monthly Income $...">
+                                    <input type="text" class="form-control mt-3" placeholder="Gross Monthly Income $...">
                                 </div>
 
                                 <div class="col-12">
-                                    <input type="text" class="form-control"
+                                    <input type="text" class="form-control mt-3"
                                         placeholder="Additional Monthly Income $...">
                                 </div>
 
+                                <div id="additional-income-boxes"></div>
+
                                 <div class="col-12">
-                                    <select id="inputState" class="form-select">
+                                    <select id="inputState" class="form-select mt-3" onchange="onChangeAdditionalIncome()">
                                         <option selected>Source Of Additional Income</option>
-                                        <option>Text 1</option>
-                                        <option>Text 2</option>
-                                        <option>Text 3</option>
-                                        <option>Text 4</option>
+                                        <option>Alimony</option>
+                                        <option>Automobile Allowance</option>
+                                        <option>Boarder Income</option>
+                                        <option>Capital Gains</option>
+                                        <option>Child Support</option>
+                                        <option>Disability</option>
+                                        <option>Foster Care</option>
+                                        <option>Housing or Parsonage</option>
+                                        <option>Interest and Dividends</option>
+                                        <option>Mortgage Credit Certificate</option>
+                                        <option>Mortgage Differential Payments</option>
+                                        <option>Notes Receivable</option>
+                                        <option>Public Assistance</option>
+                                        <option>Retirement (e.g., Pension, IRA)</option>
+                                        <option>Royalty Payments</option>
+                                        <option>Separate Maintenance</option>
+                                        <option>Social Security</option>
+                                        <option>Trust</option>
+                                        <option>Unemployment Benefits</option>
+                                        <option>VA Compensation</option>
+                                        <option>Other</option>
                                     </select>
                                 </div>
                             </form>
@@ -476,6 +494,53 @@
                             </div>
 
                             <div class="main-heading">
+                                <h4>HOW DID YOU HEAR ABOUT US?</h4>
+                            </div>
+
+                            <form class="row">
+                                <div class="col-12">
+                                    <select id="inputState" class="form-select mt-3" onchange="onAboutUs(this)">
+                                        <option selected value="aboutUs">How Did You Hear About Us?</option>
+                                        <option value="other">Other</option>
+                                        <option value="internet">Internet</option>
+                                        <option value="friend">Friend</option>
+                                        <option value="realtor">Realtor</option>
+                                        <option value="builder">Builder</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control mt-3 d-none" id="friendName"
+                                        placeholder="Friend Name">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="number" class="form-control mt-3 d-none" id="friendPhoneNumber"
+                                        placeholder="Friend Cell Phone Number">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control mt-3 d-none" id="realtorName"
+                                        placeholder="Realtor Name">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="number" class="form-control mt-3 d-none" id="realtorPhoneNumber"
+                                        placeholder="Realtor Cell Phone Number">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control mt-3 d-none" id="builderName"
+                                        placeholder="Builder Name">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="number" class="form-control mt-3 d-none" id="builderPhoneNumber"
+                                        placeholder="Builder Cell Phone Number">
+                                </div>
+                            </form>
+
+                            <div class="main-heading">
                                 <h4>AUTHORIZATION</h4>
                             </div>
 
@@ -487,35 +552,502 @@
                                         <label class="form-check-label"> Borrower Signature</label>
                                     </div>
 
-                                    <p class="text-start pt-4">I understand that by submitting this online application, I am authorizing a credit check and to make whatever inquiries necessary in connection with this request.</p>
+                                    <p class="text-start pt-4">I understand that by submitting this online application,
+                                        I am authorizing a credit check and to make whatever inquiries necessary in
+                                        connection with this request.</p>
                                 </div>
 
                                 <div class="col-md-12 mt-3 d-none" id="esign-file-area">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="digitalSignature"
                                             id="showDigitalSignature" onclick="onDigitalSignature(this)">
-                                        <label class="form-check-label"> Click Here If You Want To Upload Digital Signature</label>
+                                        <label class="form-check-label"> Click Here If You Want To Upload Digital
+                                            Signature</label>
                                     </div>
 
                                     <div class="mt-3" id="e-sign-canvas">
                                         <canvas id="sig-canvas" width="620" height="160">
                                             Get a better browser, bro.
                                         </canvas>
-    
+
                                         <div class="col-md-12">
-                                            <button class="btn btn-light border mt-3" id="sig-clearBtn">Clear Signature</button>
+                                            <button class="btn btn-light border mt-3" id="sig-clearBtn">Clear
+                                                Signature</button>
                                         </div>
 
-                                        <p class="text-start pt-4">For Easier Signing Please Turn The Phone Sideways. </p>
+                                        <p class="text-start pt-4">For Easier Signing Please Turn The Phone Sideways.
+                                        </p>
                                     </div>
 
                                     <div class="col-md-12 d-none" id="fileSelectArea">
                                         <input class="mt-3" type="file" id="myFile" name="filename">
-    
-                                        <p class="text-start pt-4">Accepted File Types: Jpg, Png, Jpeg, Max. File Size: 3 MB.</p>
+
+                                        <p class="text-start pt-4">Accepted File Types: Jpg, Png, Jpeg, Max. File Size:
+                                            3 MB.</p>
                                     </div>
                                 </div>
                             </form>
+
+                            <div class="main-heading">
+                                <h4>INFO FOR GOVERNMENT</h4>
+                            </div>
+
+                            <div class="col-12">
+                                <p class="text-start">The Following Information Is Requested By The Federal Government
+                                    For Certain Types Of Loans Related To A Dwelling In Order To Monitor The Lender's
+                                    Compliance With Equal Credit Opportunity, Fair Housing And Home Mortgage Disclosure
+                                    Laws. You Are Not Required To Furnish This Information, But Are Encouraged To Do So.
+                                    The Law Provides That A Lender May Not Discriminate Either On The Basis Of This
+                                    Information, Or On Whether You Choose To Furnish It. If You Furnish The Information,
+                                    Please Provide Both Ethnicity And Race. For Race, You May Check More Than One
+                                    Designation. If You Do Not Furnish Ethnicity, Race, Or Sex, Under Federal
+                                    Regulations, This Lender Is Required To Note The Information On The Basis Of Visual
+                                    Observation And Surname If You Have Made This Application In Person. If You Do Not
+                                    Wish To Furnish The Information, Please Check The Box Below.</p>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="cstm-check-box">
+                                    <div class="row">
+
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <h5>BORROWER</h5>
+                                                <div class="seprator"></div>
+                                                <p><strong>Ethnicity:</strong> Check One Or More</p>
+
+                                                <div class="checkbox-form">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Hispanic Or Latino
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Mexican</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Puerto Rican</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Cuban</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Other Hispanic Or Latino - Print Origin
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="">
+                                                        <label class="form-label">For Example: Argentinean, Colombian,
+                                                            Dominican, Nicaraguan, Salvadoran, Spaniard, And So
+                                                            On.</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Not Hispanic Or Latino
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            I Do Not Wish To Provide This Information
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="seprator"></div>
+
+                                                    <p><strong>Race:</strong> Check One Or More</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            American Indian Or Alaska Native - Print Name Of Enrolled Or Principal Tribe:
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="" placeholder="Race">
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Asian
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Asian Indian
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Chinese
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Filipino
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Japanese
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Korean
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Vietnamese
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Other Asian - Print Race:
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="">
+                                                        <label class="form-label">For Example: Hmong, Laotian, Thai, Pakistani, Cambodian, And So On.</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Black Or African American
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Native Hawaiian Or Other Pacific Islander
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Native Hawaiian</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Guamanian Or Chamorro</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Samoan</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Other Pacific Islander - Print Race:
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="" placeholder="For Example: Fijian, Tongan, And So On.">
+                                                        <label class="form-label">For Example: Fijian, Tongan, And So On.</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            White
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            I Do Not Wish To Provide This Information
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="seprator"></div>
+
+                                                    <p><strong>Sex</strong></p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Male
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Female
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            I Do Not Wish To Provide This Information
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn-submit mt-3">
+                                                <button type="button" class="btn btn-success">SUBMIT</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <h5>CO-BORROWER</h5>
+                                                <div class="seprator"></div>
+                                                <p><strong>Ethnicity:</strong> Check One Or More</p>
+
+                                                <div class="checkbox-form">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Hispanic Or Latino
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Mexican</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Puerto Rican</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Cuban</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Other Hispanic Or Latino - Print Origin
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="">
+                                                        <label class="form-label">For Example: Argentinean, Colombian,
+                                                            Dominican, Nicaraguan, Salvadoran, Spaniard, And So
+                                                            On.</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Not Hispanic Or Latino
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            I Do Not Wish To Provide This Information
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="seprator"></div>
+
+                                                    <p><strong>Race:</strong> Check One Or More</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            American Indian Or Alaska Native - Print Name Of Enrolled Or Principal Tribe:
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="" placeholder="Race">
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Asian
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Asian Indian
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Chinese
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Filipino
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Japanese
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Korean
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Vietnamese
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Other Asian - Print Race:
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="">
+                                                        <label class="form-label">For Example: Hmong, Laotian, Thai, Pakistani, Cambodian, And So On.</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Black Or African American
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Native Hawaiian Or Other Pacific Islander
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Native Hawaiian</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Guamanian Or Chamorro</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="">
+                                                        <label class="form-check-label" for="">Samoan</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Other Pacific Islander - Print Race:
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <input type="text" class="form-control" id="" placeholder="For Example: Fijian, Tongan, And So On.">
+                                                        <label class="form-label">For Example: Fijian, Tongan, And So On.</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            White
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            I Do Not Wish To Provide This Information
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="seprator"></div>
+
+                                                    <p><strong>Sex</strong></p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Male
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            Female
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="">
+                                                        <label class="form-check-label" for="">
+                                                            I Do Not Wish To Provide This Information
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

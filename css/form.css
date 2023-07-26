@@ -130,5 +130,48 @@ a {
     border: 2px dotted #CCCCCC;
     border-radius: 15px;
     cursor: url(http://test.awesometechinc.com/wp-content/plugins/gravityformssignature/includes/super_signature/pen.cur), pointer;
+} 
+
+.qualification-form .cstm-form .cstm-check-box{
+    margin-top: 20px;
 }
+
+.qualification-form .cstm-form .cstm-check-box .card{
+    padding: 15px;
+}
+
+.qualification-form .cstm-form .cstm-check-box h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+  
+.qualification-form .cstm-form .cstm-check-box .seprator{
+    background-color: #bfbfbf;
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+}
+
+.qualification-form .cstm-form .cstm-check-box p{
+    font-size: 15px;
+    padding: 0;
+    text-align: unset;
+}
+
+.qualification-form .cstm-form .cstm-check-box .checkbox-form{
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.qualification-form .cstm-form .cstm-check-box .checkbox-form .form-check {
+    margin: 5px 5px 5px 0px;
+    font-size: 14px;
+}
+
+.qualification-form .cstm-form .cstm-check-box .checkbox-form label.form-label {
+    font-size: 13px;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+  
   

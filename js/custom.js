@@ -101,6 +101,59 @@ function onBorrowerAddress() {
     }
 }
 
+// how-did-you-hear-about-us?
+function onAboutUs(answer) {
+    console.log(answer.value);
+
+    if (answer.value == 'aboutUs') {
+        document.getElementById('other').classList.add('d-none');
+        document.getElementById('internet').classList.add('d-none');
+        document.getElementById('friend').classList.add('d-none');
+        document.getElementById('realtor').classList.add('d-none');
+        document.getElementById('builder').classList.add('d-none');
+    }
+    if (answer.value == 'other') {
+        document.getElementById('friendName').classList.add('d-none');
+        document.getElementById('friendPhoneNumber').classList.add('d-none');
+        document.getElementById('realtorName').classList.add('d-none');
+        document.getElementById('realtorPhoneNumber').classList.add('d-none');
+        document.getElementById('builderName').classList.add('d-none');
+        document.getElementById('builderPhoneNumber').classList.add('d-none');
+    }
+    if (answer.value == 'internet') {
+        document.getElementById('friendName').classList.add('d-none');
+        document.getElementById('friendPhoneNumber').classList.add('d-none');
+        document.getElementById('realtorName').classList.add('d-none');
+        document.getElementById('realtorPhoneNumber').classList.add('d-none');
+        document.getElementById('builderName').classList.add('d-none');
+        document.getElementById('builderPhoneNumber').classList.add('d-none');
+    }
+    if (answer.value == 'friend') {
+        document.getElementById('friendName').classList.remove('d-none');
+        document.getElementById('friendPhoneNumber').classList.remove('d-none');
+        document.getElementById('realtorName').classList.add('d-none');
+        document.getElementById('realtorPhoneNumber').classList.add('d-none');
+        document.getElementById('builderName').classList.add('d-none');
+        document.getElementById('builderPhoneNumber').classList.add('d-none');
+    }
+    if (answer.value == 'realtor') {
+        document.getElementById('friendName').classList.add('d-none');
+        document.getElementById('friendPhoneNumber').classList.add('d-none');
+        document.getElementById('realtorName').classList.remove('d-none');
+        document.getElementById('realtorPhoneNumber').classList.remove('d-none');
+        document.getElementById('builderName').classList.add('d-none');
+        document.getElementById('builderPhoneNumber').classList.add('d-none');
+    }
+    if (answer.value == 'builder') {
+        document.getElementById('friendName').classList.add('d-none');
+        document.getElementById('friendPhoneNumber').classList.add('d-none');
+        document.getElementById('realtorName').classList.add('d-none');
+        document.getElementById('realtorPhoneNumber').classList.add('d-none');
+        document.getElementById('builderName').classList.remove('d-none');
+        document.getElementById('builderPhoneNumber').classList.remove('d-none');
+    }
+}
+
 // signature
 function onSignature(value) {
     var eSignFileArea = document.getElementById("esign-file-area");
@@ -123,4 +176,11 @@ function onDigitalSignature(value) {
         fileSelectArea.classList.add('d-none');
         eSignFileArea.classList.remove('d-none');
     }
+}
+
+function onChangeAdditionalIncome() {
+    var inputBoxes = document.getElementById('additional-income-boxes');
+    var inputField = document.createElement('div');
+    inputField.innerHTML = '<input type="text" class="form-control mt-3" placeholder="Additional Monthly Income $..." />';
+    inputBoxes.appendChild(inputField);
 }
