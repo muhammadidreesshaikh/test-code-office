@@ -1,0 +1,222 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ----------------------------------- */
+
+.top-bar {
+    background-color: #e3e3e4;
+    padding: 15px;
+    border-bottom: 2px solid #fdfdfd;
+}
+
+.top-bar h3 {
+    font-size: 17px;
+}
+
+.main-section {
+    display: flex;
+}
+
+/* left-side */
+.main-section .left-side {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 25px;
+    margin-right: 4px;
+}
+
+.main-section .left-side .heading-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .left-side .heading-text h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main-section .main-table {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .left-side .main-table .sales-price {
+    width: 20%;
+}
+
+.main-section .left-side .main-table .sales-price h6 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-section .left-side .main-table .sales-price input {
+    margin-top: 20px;
+    width: 95%;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    height: 20px;
+}
+
+.main-section .left-side .main-table .table-input {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.main-section .left-side .main-table .table-input .label-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ffffff;
+    width: 85%;
+}
+
+.main-section .left-side .main-table .table-input .label-input-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section .left-side .main-table .table-input .label-input-btn .label-input {
+    width: 85%;
+}
+
+.main-section .left-side .main-table .table-input .label-input label {
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.main-section .left-side .main-table .table-input .label-input input {
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    height: 23px;
+}
+
+.main-section .left-side .main-table .table-input .label-input.total-input {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ffffff;
+    width: 85%;
+}
+
+.main-section .left-side .main-table .table-input .label-input.total-input input {
+    margin-left: 20px;
+}
+
+/* right-side */
+.main-section .right-side {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 25px;
+    margin-right: 4px;
+}
+
+.main-section .small-table {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .right-side .small-table .table-input {
+    width: 60%;
+}
+
+.main-section .right-side .small-table .table-input .label-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 85%;
+}
+
+.main-section .right-side .small-table .table-input .label-input-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section .right-side .small-table .table-input .label-input-btn .label-input {
+    width: 85%;
+}
+
+.main-section .right-side .small-table .table-input .label-input label {
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.main-section .right-side .small-table .table-input .label-input input {
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    height: 23px;
+}
+
+.main-section .right-side .small-table .table-input .label-input select {
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+    padding-left: 5px;
+}
+
+.main-section .right-side .small-table .table-input .bar-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+    background-color: white;
+    padding: 13px;
+}
+
+.main-section .right-side .small-table .table-input .bar-line h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main-section .right-side .small-table .table-input h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #369436;
+    padding-top: 30px;
+}
+
+.main-section .right-side .small-table .table-input .cstm-btn {
+    margin-top: 50px;
+}
+
+.main-section .right-side .small-table .table-input .cstm-btn a {
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #dcdcdc;
+    padding: 20px 60px;
+    color: black;
+    border: 1px solid #767676;
+}

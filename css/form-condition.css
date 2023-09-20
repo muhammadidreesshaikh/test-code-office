@@ -1,14 +1,3 @@
-/* colors
-:root {
-    --blue-color: #48548c;
-    --white-color: #ffff;
-    --gray-color: #d1d1d1;
-    --darkgray-color: #8c8c8c;
-    --black-color: #0e0e0e;
-    --lightblue-color: #37bdc5;
-} */
-
-/* body */
 body {
     font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
@@ -130,35 +119,35 @@ a {
     border: 2px dotted #CCCCCC;
     border-radius: 15px;
     cursor: url(http://test.awesometechinc.com/wp-content/plugins/gravityformssignature/includes/super_signature/pen.cur), pointer;
-} 
+}
 
-.qualification-form .cstm-form .cstm-check-box{
+.qualification-form .cstm-form .cstm-check-box {
     margin-top: 20px;
 }
 
-.qualification-form .cstm-form .cstm-check-box .card{
+.qualification-form .cstm-form .cstm-check-box .card {
     padding: 15px;
 }
 
-.qualification-form .cstm-form .cstm-check-box h5{
+.qualification-form .cstm-form .cstm-check-box h5 {
     font-size: 20px;
     font-weight: 600;
 }
-  
-.qualification-form .cstm-form .cstm-check-box .seprator{
+
+.qualification-form .cstm-form .cstm-check-box .seprator {
     background-color: #bfbfbf;
     width: 100%;
     height: 2px;
     margin: 10px 0;
 }
 
-.qualification-form .cstm-form .cstm-check-box p{
+.qualification-form .cstm-form .cstm-check-box p {
     font-size: 15px;
     padding: 0;
     text-align: unset;
 }
 
-.qualification-form .cstm-form .cstm-check-box .checkbox-form{
+.qualification-form .cstm-form .cstm-check-box .checkbox-form {
     margin-top: 10px;
     padding-left: 0;
 }
@@ -173,5 +162,3 @@ a {
     padding-top: 5px;
     margin-bottom: 0;
 }
-  
-  

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Tool</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/export-tool.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="logo">
+                        <img src="https://cutewallpaper.org/24x/q14k3zorp/1106617110.jpg">
+                        <h1>Export Tool</h1>
+                    </div>
+                </div>
+
+                <div class="col-md-6 position-relative">
+                    <div class="btn-template">
+                        <button type="button" class="btn btn-secondary btn-sm">Template Setup</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cstm-tab">
+        <div class="container">
+            <div class="row border p-2">
+
+                <div class="tab">
+                    <button class="tablinks active" onclick="openCity(event, 'DataExtractor')">Data Extractor</button>
+                    <!-- <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button> -->
+                </div>
+
+                <div id="DataExtractor" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="select-data">
+                                <div class="row">
+
+                                    <h6>Select Data</h6>
+                                    <div class="col-6">
+                                        <div class="cstm-main">
+                                            <label for="">Template: </label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="cstm-main">
+                                            <label for="">Template: </label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="cstm-main">
+                                            <label for="">Template: </label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="cstm-main">
+                                            <label for="">Template: </label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="cstm-upload">
+                                        <form action="/action_page.php">
+                                            <input type="file" id="myFile" name="filename">
+                                        </form>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                User Loan Number
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="file-path">
+                                <h6>Select Data</h6>
+
+                                <div class="custom-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            User Loan Number
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="Paris" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div> -->
+
+                <div class="custom-table-listing">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></th>
+                                <th scope="col">Loan No</th>
+                                <th scope="col">B_LastName</th>
+                                <th scope="col">LoanAmount</th>
+                                <th scope="col">WareHouseBank</th>
+                                <th scope="col">FundRelease</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></th>
+                                <td>@twitter</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@fat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bottom-btn">
+                    <button type="button" class="btn btn-secondary btn-sm">Refresh</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Export Loan</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/48d9fef032.js" crossorigin="anonymous"></script>
+    <script src="./js/export-tool.js"></script>
+</body>
+
+</html>
