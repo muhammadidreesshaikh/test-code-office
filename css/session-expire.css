@@ -1,0 +1,26 @@
+.session {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.session .session-text {
+    background-color: #006fb9;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.session .session-text h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.session .session-text p {
+    font-size: 14px;
+    color: white;
+    padding-top: 30px;
+}
+
+.session .session-text .session-btn {
+    margin-top: 20px;
+}
