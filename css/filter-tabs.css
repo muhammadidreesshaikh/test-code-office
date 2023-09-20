@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ----------------------------------- */
+
+.cstm-filter-tab {
+    padding: 60px 0;
+}
+
+.filterDiv {
+    margin: 2px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filter-tab {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.cstm-filter-tab .filter-tab .cstm-main-card {
+    margin-top: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.cstm-filter-tab .filter-tab .cstm-main-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+
+/* Style the buttons */
+a.tab-btns {
+    background-color: #d6d6d6;
+    padding: 7px 20px;
+    border-radius: 40px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+a.tab-btns:hover {
+    background-color: #ddd;
+    color: #666;
+}
+
+.tab-btns.active {
+    background-color: #666;
+    color: white;
+}
