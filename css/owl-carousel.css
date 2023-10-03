@@ -1,0 +1,24 @@
+.home-demo .item {
+    background: #ff3f4d;
+}
+
+.home-demo h2 {
+    color: #FFF;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    background: #0eb395 !important;
+    color: white !important;
+    border: none !important;
+    font: icon !important;
+    padding: 0px 10px !important;
+    font-size: 20px !important;
+    border-radius: 30px !important;
+}
