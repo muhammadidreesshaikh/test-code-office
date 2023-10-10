@@ -1,0 +1,186 @@
+.doc-setup {
+    padding: 30px 0;
+}
+
+.doc-setup .form-check {
+    margin-top: 10px;
+}
+
+.doc-setup .form-check label {
+    font-size: 14px;
+}
+
+.doc-setup .cstm-name {
+    padding: 15px 0;
+}
+
+.doc-setup .cstm-name input {
+    width: 100%;
+    height: 35px;
+}
+
+.doc-setup .form-label {
+    margin-bottom: 0;
+}
+
+.doc-setup .select-data .cstm-upload {
+    display: flex;
+    padding-top: 15px;
+}
+
+.doc-setup .head-delimiter h6 {
+    font-size: 16px;
+    float: right;
+    font-weight: 700;
+}
+
+.doc-setup h5 {
+    font-size: 15px;
+    padding: 25px 0px 0 0;
+}
+
+.doc-setup .file-path {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+}
+
+.doc-setup .file-path .form-check {
+    margin-top: 0px;
+}
+
+.doc-setup .file-path .cstm-main {
+    display: flex;
+    margin-top: 20px;
+}
+
+.doc-setup .file-path .cstm-main label {
+    padding: 5px 10px 0 0;
+    font-size: 14px;
+}
+
+.doc-setup .file-path .cstm-main select {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.doc-setup .doc-setup-listing {
+    margin-top: 50px;
+    border: 1px solid #ededed;
+    padding: 15px;
+}
+
+.doc-setup .doc-setup-listing table {
+    text-align: center;
+}
+
+.doc-setup .doc-setup-listing .head-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.doc-setup .doc-setup-listing .head-btn h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.doc-setup .doc-setup-listing .head-btn button {
+    font-size: 14px;
+}
+
+.doc-setup .loan-export-listing {
+    margin-top: 50px;
+    border: 1px solid #ededed;
+    padding: 15px;
+}
+
+.doc-setup .loan-export-listing table {
+    text-align: center;
+}
+
+.doc-setup .loan-export-listing .head-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.doc-setup .loan-export-listing .head-btn h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.doc-setup .loan-export-listing .head-btn .cstm-main {
+    display: flex;
+}
+
+.doc-setup .loan-export-listing .head-btn .cstm-main label {
+    padding: 5px 10px 0 0;
+    font-size: 14px;
+}
+
+.doc-setup .loan-export-listing .head-btn .cstm-main select {
+    padding: 5px 10px;
+    font-size: 13px;
+    width: 180px;
+}
+
+.doc-setup .loan-export-listing .head-btn button {
+    font-size: 14px;
+}
+
+.doc-setup .doc-save {
+    margin-top: 50px;
+    border: 1px solid #ededed;
+    padding: 15px;
+}
+
+.doc-setup .doc-save h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.doc-save .cstm-save-input {
+    display: flex;
+    margin: 15px 0;
+}
+
+.doc-save .cstm-save-input label.form-label {
+    font-size: 15px;
+    padding: 5px 10px 0 0;
+}
+
+.doc-save .form-check {
+    margin-top: 15px;
+}
+
+.doc-save .export-right {
+    border-left: 2px solid #ddd;
+}
+
+.doc-save .custm-main {
+    display: flex;
+    margin-top: 20px;
+}
+
+.doc-save .custm-main label {
+    padding: 5px 10px 0 0;
+    font-size: 14px;
+}
+
+.doc-save .custm-main select {
+    padding: 5px 10px;
+    font-size: 13px;
+    width: 250px;
+}
+
+.doc-save .save-close {
+    float: right;
+    margin-top: 30px;
+}
+
+.doc-save .save-close button {
+    font-size: 14px;
+}

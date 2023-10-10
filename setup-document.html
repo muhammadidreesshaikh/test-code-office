@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/setup-document.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="doc-setup">
+        <div class="container">
+            <div class="row border p-3">
+
+                <div class="col-md-9">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Download Unassigned Documents
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Zip Documents
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Merge Documents
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Export Single PDF
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <form class="cstm-name">
+                                <label class="form-label">File Name Configuration:</label>
+                                <input type="text" class="form-control" placeholder="File Name">
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="cstm-upload">
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Download Documents
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Include Documents From Stacking Templates
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="head-delimiter">
+                            <h6>Delimiter:-</h6>
+                        </div>
+
+                        <h5>Loan File Export</h5>
+                        <div class="file-path">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Export Loan File
+                                </label>
+                            </div>
+
+                            <div class="cstm-main">
+                                <label for="">Format: </label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open This</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doc-setup-listing">
+                    <div class="col-12">
+                        <div class="head-btn">
+                            <h4>Documents Setup</h4>
+                            <button type="button" class="btn btn-primary">Add New Document</button>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered table-hover mt-3 mb-0 ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Documents</th>
+                                <th scope="col">Format</th>
+                                <th scope="col">Action</th>
+                                <th scope="col">Filter</th>
+                                <th scope="col">Exclude Documents</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>All</td>
+                                <td>PDF</td>
+                                <td>ALL</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><button type="button" class="btn btn-warning">Edit</button></td>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="loan-export-listing">
+                    <div class="head-btn">
+                        <h4>Loan Export Fields Setup</h4>
+
+                        <div class="cstm-main">
+                            <label for="">Export File Extension: </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>CSV</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Add New Field</button>
+                    </div>
+
+                    <table class="table table-bordered table-hover mt-3 mb-0 ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Column Name</th>
+                                <th scope="col">FieldID</th>
+                                <th scope="col">Format</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Condition Field</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Loan Number</td>
+                                <td>364</td>
+                                <td>TEXT</td>
+                                <td>-</td>
+                                <td><input class="form-check-input" type="checkbox"></td>
+                                <td><button type="button" class="btn btn-warning">Edit</button></td>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Borower</td>
+                                <td>4002</td>
+                                <td>TEXT</td>
+                                <td>-</td>
+                                <td><input class="form-check-input" type="checkbox"></td>
+                                <td><button type="button" class="btn btn-warning">Edit</button></td>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="doc-save">
+                    <div class="col-12">
+                        <h4>Documents Save Setting</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-5">
+                                    <form class="cstm-save-input">
+                                        <label class="form-label">Host</label>
+                                        <input type="text" class="form-control">
+                                    </form>
+                                </div>
+
+                                <div class="col-5">
+                                    <form class="cstm-save-input">
+                                        <label class="form-label">Path</label>
+                                        <input type="text" class="form-control">
+                                    </form>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            SSL
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-5">
+                                    <form class="cstm-save-input">
+                                        <label class="form-label">User</label>
+                                        <input type="text" class="form-control">
+                                    </form>
+                                </div>
+
+                                <div class="col-4">
+                                    <form class="cstm-save-input">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control">
+                                    </form>
+                                </div>
+
+                                <div class="col-3">
+                                    <form class="cstm-save-input">
+                                        <label class="form-label">Port</label>
+                                        <input type="text" class="form-control">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 export-right">
+                            <div class="custm-main">
+                                <label for="">Export To: </label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>System</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="save-close">
+                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-primary">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
