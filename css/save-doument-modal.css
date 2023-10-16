@@ -1,0 +1,42 @@
+.save-document {
+    padding: 30px 0;
+}
+
+.modal .modal-header .logo-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modal .logo-heading h3 {
+    color: red;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.modal .logo-heading p {
+    font-size: 15px;
+    padding: 5px 20px 0px 20px;
+    color: black;
+    margin: 0;
+}
+
+.modal .format-box {
+    margin-top: 30px;
+    border: 1px solid #ededed;
+    padding: 15px;
+}
+
+.modal .format-box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.modal .format-box .stacking-list {
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    margin-top: 30px;
+}
