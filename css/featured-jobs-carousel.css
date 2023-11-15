@@ -1,0 +1,128 @@
+.owl-carousel {
+    padding: 60px 30px;
+    background-color: black;
+}
+
+.owl-carousel .owl-item {
+    border: 1px solid #d7d7d7;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    height: 280px;
+    background-color: white;
+}
+
+.owl-carousel .job-title h2 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 900;
+    font-family: inter;
+    height: 100px;
+}
+
+.owl-carousel .owl-item .location-info {
+    padding: 30px 0;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.owl-carousel .location-info p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.owl-carousel .owl-item .view-detail {
+    padding-top: 10px;
+}
+
+.owl-carousel .view-detail .left {
+    float: left;
+}
+
+.owl-carousel .view-detail .left p {
+    margin: 0;
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.owl-carousel .view-detail .left small {
+    padding-left: 12px;
+    color: gray;
+}
+
+.owl-carousel .view-detail .right {
+    float: right;
+}
+
+.owl-carousel .view-detail .right a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #0c998e;
+    font-weight: 600;
+}
+
+
+/* ------button-------- */
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF !important;
+    background: 0 !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+span {
+    font-size: 70px !important;
+}
+
+.owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-nav button.owl-next {
+    right: 0;
+}
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ffff;
+    margin: 0 3px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 7px 5px;
+    background: #ffff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffff;
+    margin: 7px 3px;
+}
+
+
+.owl-dots button.owl-dot.active {
+    background-color: #77BA02;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+
+span {
+    font-size: 50px;
+    position: relative;
+    top: -5px;
+}
