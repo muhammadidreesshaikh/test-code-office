@@ -62,6 +62,7 @@ a.black-btn:hover {
 /* faqs start*/
 .faqs {
     padding: 50px 0;
+    background-color: white;
 }
 
 .faqs .faqs-content {
