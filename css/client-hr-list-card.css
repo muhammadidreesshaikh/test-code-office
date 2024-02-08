@@ -1,0 +1,177 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ----------------------------------- */
+
+/* client-hr */
+.client-hr {
+    padding: 50px 0;
+    background-color: olivedrab;
+}
+
+.client-hr .clienthr-logo {
+    background-color: white;
+    padding: 20px 0 40px 0;
+}
+
+.client-hr .clienthr-logo img {
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+
+.client-hr .client-bg-body {
+    background-color: #0e2f65;
+    padding: 1px 40px 40px 40px;
+}
+
+.client-hr .client-bg-body .client-bg-card {
+    background-color: #0099d6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+}
+
+.client-hr .client-bg-card .ClientHrTitle {
+    background-color: #0e2f65;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.client-hr .ClientHrTitle h2 {
+    font-size: 14px;
+    color: white;
+}
+
+.client-hr .clienthr-main {
+    margin-top: 40px;
+}
+
+.client-hr .clienthr-card {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.client-hr .clienthr-card .HRProfileImg img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.client-hr .clienthr-card .clienthr-content {
+    padding: 10px 0px 10px 15px;
+}
+
+.client-hr .clienthr-card .clienthr-content h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.client-hr .clienthr-card .clienthr-content p {
+    color: white;
+    font-size: 14px;
+}
+
+.client-hr .clienthr-content .clienthr-contact {
+    display: grid;
+}
+
+.client-hr .clienthr-content .clienthr-contact a {
+    color: white;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.client-hr .clienthr-content .clienthr-contact i {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.client-hr .clienthr-card .seprator {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 768px) {
+    .client-hr .clienthr-logo img {
+        width: 70%;
+        height: 70px;
+    }
+
+    .client-hr .client-bg-body {
+        padding: 1px 30px 40px 30px;
+    }
+
+    .client-hr .client-bg-body .client-bg-card {
+        padding: 14px;
+    }
+
+    .client-hr .clienthr-card .clienthr-content {
+        padding: 10px 0px 10px 10px;
+    }
+
+    .client-hr .clienthr-content .clienthr-contact a {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+
+    .client-hr .clienthr-content .clienthr-contact i {
+        padding: 4px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav ul a {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {}
