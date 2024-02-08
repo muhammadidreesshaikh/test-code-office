@@ -20,6 +20,43 @@ a {
     text-decoration: none !important;
 }
 
+a.orange-btn {
+    border: 1px solid orange;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: white;
+    background-color: orange;
+    box-shadow: 1px 0px 10px 0px orange;
+}
+
+a.orange-btn:hover {
+    transition: 0.5s;
+    background-color: white;
+    ;
+    color: black;
+    border: 1px solid white;
+    box-shadow: 1px 0px 10px 0px white;
+}
+
+a.black-btn {
+    border: 1px solid var(--orange-color);
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--orange-color);
+    box-shadow: 1px 0px 10px 0px var(--orange-color);
+}
+
+a.black-btn:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 0px 10px 0px black;
+}
+
 /* ----------------------------------- */
 
 /* faqs start*/
