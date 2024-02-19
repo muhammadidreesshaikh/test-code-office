@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ----------------------------------- */
+
+.cstm-community-popup {
+    background-image: url(../img/tree-736885_1280.jpg);
+    position: relative;
+    width: 800px;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-size: 69% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* position: relative;
+    width: 100%;
+    background-size: contain; */
+}
+
+.cstm-community-popup::after {
+    background: linear-gradient(to right, #01948a 44%, rgba(255, 255, 255, 0) 50%);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* height: 100%;
+    width: 1025px; */
+}
+
+.cstm-community-popup .join-subs-form {
+    padding: 20px;
+    z-index: 1;
+}
+
+.cstm-community-popup .join-subs-form h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.cstm-community-popup .join-subs-form p {
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+}
