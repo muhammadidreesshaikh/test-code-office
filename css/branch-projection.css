@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+}
+
+/* -------------- */
+
+.branch-projection {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.branch-projection .branch-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branch-projection .branch-title h1 {
+    font-size: 40px;
+    color: #007367;
+    margin-bottom: 0;
+}
+
+.branch-projection .branch-title p {
+    font-size: 17px;
+    color: #909090;
+}
+
+.branch-projection .branch-title .branch-form-select {
+    margin-top: 30px;
+}
+
+.branch-form label {
+    padding: 10px 30px 0 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.branch-projection .branch-form label {
+    padding: 10px 30px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.branch-projection .branch-form select {
+    border: 1px solid #007367;
+    color: #007367;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+}
+
+.branch-projection .branch-form select option {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.branch-projection .branch-heading .branch-btns a {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #909090;
+    text-decoration: none;
+    color: #909090;
+    display: block;
+}
+
+.branch-projection .branch-heading-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branch-projection .branch-heading-bottom .manager-name {
+    display: flex;
+}
+
+.branch-projection .branch-heading-bottom .manager-name p {
+    margin-bottom: 0;
+    color: black;
+    padding-right: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.branch-projection .branch-heading-bottom .manager-name h4 {
+    font-size: 16px;
+    color: #007367;
+    font-weight: 500;
+}
+
+.branch-projection .branch-heading-bottom .protection-btn a {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #128783;
+    text-decoration: none;
+    color: #128783;
+}
+
+.main-table {
+    padding: 15px;
+    margin: 30px 0;
+    box-shadow: 0px 1px 7px 1px #e3e3e3;
+}
+
+.main-table h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #007367;
+}
+
+.main-table table thead th {
+    font-weight: 400;
+    color: #007367;
+    font-size: 14px;
+}
+
+.main-table table tbody tr td {
+    font-size: 14px;
+}
+
+.main-table table tr,
+.main-table table td,
+.main-table table th {
+    border-color: unset;
+    border-style: none;
+    border-width: 0;
+}
+
+.sec-calender {}
+
+.sec-calender .top-bottom {
+    padding: 10px 0;
+}
+
+.sec-calender .head-box {
+    background-color: #007367;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.sec-calender .head-box h1 {
+    margin-bottom: 0;
+    font-size: 130px;
+    font-weight: 700;
+    color: white;
+}
+
+.sec-calender .calender-box {
+    box-shadow: 0px 1px 7px 1px #e3e3e3;
+    width: 100%;
+    height: 250px;
+}
+
+.sec-calender .calender-box .title-date {
+    background-color: #007367;
+    padding: 10px;
+}
+
+.sec-calender .calender-box .title-date h1 {
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+}
+
+.sec-calender .calender-table table thead th {
+    font-weight: 400;
+    color: #007367;
+    font-size: 14px;
+}
+
+.sec-calender .calender-table table tbody tr td {
+    font-size: 14px;
+}
+
+.sec-calender .calender-table table th {
+    border-color: unset;
+    border-style: none;
+    border-width: 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .branch-projection .branch-title h1 {
+        font-size: 30px;
+    }
+
+    .branch-projection .branch-heading {
+        display: unset;
+    }
+
+    .branch-projection .branch-heading .branch-btns {
+        margin-top: 20px;
+    }
+
+    .branch-projection .branch-heading .branch-btns a {
+        text-align: center;
+    }
+
+    .branch-projection .branch-heading-bottom {
+        display: unset;
+        justify-content: unset;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .branch-projection .branch-heading-bottom .protection-btn {
+        margin-top: 20px;
+    }
+
+    .branch-projection .branch-heading-bottom .protection-btn a {
+        display: block;
+    }
+
+    .sec-calender .top-bottom {
+        padding: 10px 0;
+    }
+
+    .sec-calender .calender-box {
+        margin-top: 25px;
+    }
+
+    .main-table h3 {
+        padding: 15px 0px;
+    }
+}
