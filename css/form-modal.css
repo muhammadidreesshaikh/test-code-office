@@ -1,0 +1,163 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ----------------------------------- */
+
+.recipient {
+    padding: 30px;
+    background-color: white;
+}
+
+.recipient .recipient-form .cstm-main {
+    display: flex;
+    margin-top: 15px;
+}
+
+.recipient .cstm-main label {
+    padding: 7px 10px 0 0;
+    font-size: 14px;
+}
+
+.recipient .cstm-main .inline-label {
+    display: inline-block;
+    width: 100px;
+}
+
+.space-start-l {
+    position: relative;
+    left: 5rem;
+}
+
+.space-start-l .ftp-btn {
+    margin-top: 20px;
+}
+
+.space-start-l .ftp-btn a {
+    color: black;
+    font-size: 14px;
+    padding: 6px 25px;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+    background-color: #f1f1f1;
+}
+
+.space-start-l input[type=checkbox]:checked {
+    background-color: #a77e2d !important;
+    color: #ffffff !important;
+    border-color: #a77e2d !important;
+}
+
+.space-start-l .form-check-input:focus {
+    border-color: #a77e2d !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.space-start-l .form-check label {
+    font-size: 15px;
+}
+
+.recipient .ftp-btn .modal .cstm-width {
+    display: flex;
+    margin-top: 15px;
+    align-items: baseline;
+    font-size: 14px;
+}
+
+.recipient .ftp-btn .modal .cstm-width .inline-label {
+    display: inline-block;
+    width: 100px;
+}
+
+.recipient .ftp-btn .modal .cstm-width.second {
+    padding-left: 0;
+}
+
+.recipient .ftp-btn .modal .cstm-width.second input {
+    width: auto;
+}
+
+.recipient .ftp-btn .modal .cstm-width.second .second-btn a {
+    font-size: 14px;
+    background-color: #4cc34c;
+    padding: 6px 25px;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #4cc34c;
+}
+
+.recipient .ftp-btn .modal table th {
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
+}
+
+.recipient .ftp-btn .modal table td {
+    font-size: 14px;
+}
+
+.recipient .ftp-btn .modal h5 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.recipient .ftp-btn .modal .modal-footer {
+    background-color: whitesmoke;
+}
+
+.recipient .ftp-btn .modal .modal-footer a.btn-save {
+    font-size: 14px;
+    background-color: #ff6a00;
+    padding: 6px 25px;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #ff6a00;
+}
+
+.recipient .ftp-btn .modal .modal-footer a.btn-cancel {
+    font-size: 14px;
+    background-color: #f9f9f9;
+    padding: 6px 25px;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+}
+
+
+@media screen and (max-width: 768px){
+    .recipient .ftp-btn .modal .cstm-width.cstm-width.second{
+        display: block;
+    }
+
+    .recipient .ftp-btn .modal .cstm-width.second input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .recipient .ftp-btn .modal .cstm-width.second {
+        padding-left: 10px;
+    }
+
+    .recipient .ftp-btn .modal .cstm-width.second .second-btn{
+        margin-top: 20px;
+    }
+}
