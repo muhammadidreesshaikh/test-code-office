@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f3f3f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ----------------------------------- */
+
+.main-tooltip {
+    padding: 60px 0;
+}
+
+.main-tooltip .tooltip-container {
+    position: relative;
+}
+
+.main-tooltip .custom-tooltip {
+    display: none;
+    position: absolute;
+    right: -8rem;
+    bottom: 2px;
+    padding: 5px 10px;
+    background: #28a745;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.main-tooltip .custom-tooltip::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #28a745 transparent transparent;
+}
+
+.main-tooltip .tooltip-container:hover>.custom-tooltip {
+    display: block;
+}
