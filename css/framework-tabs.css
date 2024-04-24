@@ -1,0 +1,121 @@
+/* colors */
+:root {
+    --blue-color: #48548c;
+    --white-color: #ffff;
+    --gray-color: #d1d1d1;
+    --darkgray-color: #8c8c8c;
+    --black-color: #0e0e0e;
+    --lightblue-color: #37bdc5;
+}
+
+/* body */
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* --------------------------------------- */
+
+
+/* customized tabs */
+
+.framework-tabs {
+    padding: 60px 0;
+}
+
+.framework-tabs ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+.framework-tabs ul.tabs li {
+    background: none;
+    color: #000033;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.framework-tabs ul.tabs li.current {
+    background: transparent;
+    color: #222;
+    border-bottom: 3px solid #ee3024;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.framework-tabs .tab-content {
+    display: none;
+    /* padding: 15px; */
+    border-top: 1px solid #ededed;
+}
+
+.framework-tabs .tab-content.current {
+    display: inherit;
+}
+
+.framework-tabs .tab-content .cstm-main-card {
+    margin-top: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 35px;
+    width: 100%;
+    height: 180px;
+}
+
+.framework-tabs .tab-content .cstm-main-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+
+.framework-tabs .tab-content .cstm-main-card p {
+    padding-top: 15px;
+    font-size: 15px;
+    color: #000033;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .framework-tabs ul.tabs {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    /* .framework-tabs ul.tabs li {
+        white-space: normal;
+        word-wrap: break-word;
+    } */
+
+    .framework-tabs .tab-content {
+        border-top: none;
+    }
+}
