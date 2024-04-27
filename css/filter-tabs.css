@@ -68,12 +68,7 @@ a.tab-btns {
     margin-top: 10px;
 }
 
-a.tab-btns:hover {
-    background-color: #ddd;
-    color: #666;
-}
-
 .tab-btns.active {
-    background-color: #666;
+    background-color: orange;
     color: white;
 }
